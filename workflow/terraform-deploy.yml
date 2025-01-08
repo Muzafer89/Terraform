@@ -1,0 +1,18 @@
+on
+..workflow_dispatch:
+...push:
+
+jobs:
+...terraform-deploy:
+....runs-on: windows-latest
+....steps:
+......name: Configure-Aws-Credintials
+......uses: aws-actions/configure-aws-credintials@v1
+......with: 
+........role-to-assume: 
+........aws-region:
+
+
+
+
+
